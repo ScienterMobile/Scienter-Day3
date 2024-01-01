@@ -1,17 +1,37 @@
-import { StyleSheet, Dimensions } from 'react-native';
-import AppbarImage from '../Images/Appbar.png';
+import { StyleSheet } from 'react-native';
 
-export const navBarStyle= StyleSheet.create({
+export const navBarStyle = StyleSheet.create({
   bar: {
-    position: 'relative',
-    marginTop:0,
-    padding:19,
+    marginTop: 0,
+    padding: 19,
     backgroundColor: 'white',
-    borderRadius:10,
-  },
-  backgroundImage: {
-    flex: 1,
-    resizeMode: 'cover', 
+    borderRadius: 10,
+    borderBottomColor: 'lightblue',
+    borderBottomWidth: 6,
+    alignItems: 'center',
   },
 
+  Item: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between', 
+    paddingHorizontal: 10, 
+    alignSelf: 'flex-start', 
+  },
+  title: {
+    flex: 1, 
+    fontFamily: 'Popins',
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: 'blue',
+  },
+  icon: {
+    marginRight: 20, 
+  },
+  homeIcon: {
+    color: 'blue',
+  },
+  gearIcon: {
+    marginLeft: 'auto', 
+  },
 });

@@ -1,31 +1,30 @@
-import React, { useState,useEffect } from 'react';
-import { TextInputProps } from 'react-native';
+import React from 'react';
+import { View, Text, TouchableOpacity, ImageBackground } from 'react-native';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { navBarStyle } from './navBarStyle.tsx';
-import { View, Text, TouchableOpacity, ImageBackground, ScrollView, KeyboardAvoidingView, Platform,  
-    useNavigation, useState as useStateImport, backgroundImage,AppbarImage   } from '../Imports/imports';
 
-interface navBarProps extends TextInputProps {
-
-}
-
-const navBar: React.FC = () => {
- 
- 
- 
-
+const NavBar: React.FC = () => {
   return (
-    <View style={[navBarStyle.bar]} >
+    <View style={[navBarStyle.bar]}>
+      <View style={[navBarStyle.Item]}>
+        <FontAwesome
+          name="home"
+          size={24}
+          color="black"
+          style={[navBarStyle.icon, navBarStyle.homeIcon]}
+        />
 
-       <ImageBackground source={AppbarImage} style={navBarStyle.backgroundImage}>
-   
-    </ImageBackground>
-    
-    <Text>
-        hi
-    </Text>
+        <Text style={[navBarStyle.title]}>Log-in</Text>
 
+        <FontAwesome
+          name="gear"
+          size={24}
+          color="black"
+          style={[navBarStyle.icon, navBarStyle.gearIcon]}
+        />
+      </View>
     </View>
   );
 };
 
-export default navBar;
+export default NavBar;

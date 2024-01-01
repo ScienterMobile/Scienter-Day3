@@ -87,7 +87,7 @@ const LogScreen: React.FC = () => {
           textColor='black'
           hint="Please enter a valid Password"
         />
-
+          
           <View style={logScreenStyles.bcontainer as any} >
           <TouchableOpacity style={logScreenStyles.buttonL as any} onPress={handleLogin}>
             <Text style={logScreenStyles.buttonText as any }>Log in</Text>
