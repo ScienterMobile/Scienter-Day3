@@ -1,12 +1,11 @@
 import React, { useState,useEffect } from 'react';
-import { View, TextInput, TextInputProps, TextStyle, Text } from 'react-native';
+import { TextInputProps } from 'react-native';
 import { navBarStyle } from './navBarStyle.tsx';
+import { View, Text, TouchableOpacity, ImageBackground, ScrollView, KeyboardAvoidingView, Platform,  
+    useNavigation, useState as useStateImport, backgroundImage,AppbarImage   } from '../Imports/imports';
 
 interface navBarProps extends TextInputProps {
-  placeholder1: string;
-  textColor1?: string;
-  textSize1?: number;
-  hint1?: string;
+
 }
 
 const navBar: React.FC = () => {
@@ -15,12 +14,15 @@ const navBar: React.FC = () => {
  
 
   return (
-    <View>
-        
+    <View style={[navBarStyle.bar]} >
+
+       <ImageBackground source={AppbarImage} style={navBarStyle.backgroundImage}>
+   
+    </ImageBackground>
+    
     <Text>
         hi
     </Text>
-      
 
     </View>
   );

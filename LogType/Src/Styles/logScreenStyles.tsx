@@ -1,7 +1,8 @@
 const logScreenStyles = { 
     backgroundImage: {
       flex: 1,
-      resizeMode: 'cover', 
+      resizeMode: 'cover',
+      borderRadius: 15, 
     },
     container: {
       flex: 1,
@@ -10,6 +11,12 @@ const logScreenStyles = {
       padding: 20,
       
       elevation: 5,
+    },
+    bcontainer: {
+      flex: 1,
+      padding: 20,
+      elevation: 5,
+      alignItems: 'center'
     },
     bottom: {
       flex: 1,

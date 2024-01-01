@@ -53,10 +53,10 @@ const LogScreen: React.FC = () => {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
       <ImageBackground source={backgroundImage} style={logScreenStyles.backgroundImage}>
-        
+      <NavBar/>
         <View style={logScreenStyles.container  as any}>
 
-         <NavBar/>
+         
         
 
 
@@ -88,6 +88,7 @@ const LogScreen: React.FC = () => {
           hint="Please enter a valid Password"
         />
 
+          <View style={logScreenStyles.bcontainer as any} >
           <TouchableOpacity style={logScreenStyles.buttonL as any} onPress={handleLogin}>
             <Text style={logScreenStyles.buttonText as any }>Log in</Text>
           </TouchableOpacity>
@@ -98,6 +99,7 @@ const LogScreen: React.FC = () => {
             <Text style={logScreenStyles.buttonText as any}>Sign Up</Text>
           </TouchableOpacity>
 
+          </View>
 
         </View>
         <ErrorModal
