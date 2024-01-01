@@ -86,7 +86,7 @@ const LogScreen: React.FC = () => {
 
           <Text style={logScreenStyles.signup as any }>Don't have an account?</Text>
 
-          <TouchableOpacity style={logScreenStyles.buttonS as any} onPress={() => navigation.navigate('Sign up' as never)}>
+          <TouchableOpacity style={logScreenStyles.buttonS as any} onPress={() => navigation.navigate('sign-up' as never)}>
             <Text style={logScreenStyles.buttonText as any}>Sign Up</Text>
           </TouchableOpacity>
 
