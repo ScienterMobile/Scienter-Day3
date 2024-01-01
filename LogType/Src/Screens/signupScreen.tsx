@@ -53,7 +53,8 @@ const SignupScreen: React.FC = () => {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
       <ImageBackground source={backgroundImage} style={signupScreenStyles.backgroundImage}>
-        <NavBar/>
+
+      <NavBar isHomePage={false} isPage={'log-in'} />
         <View style={signupScreenStyles.container as any} >
         
         
