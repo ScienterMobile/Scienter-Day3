@@ -21,9 +21,9 @@ export const navBarStyle = StyleSheet.create({
   title: {
     flex: 1, 
     fontFamily: 'Popins',
-    fontSize: 22,
+    fontSize: 25,
     fontWeight: 'bold',
-    color: 'blue',
+    color: 'dark-blue',
   },
   icon: {
     marginRight: 20, 

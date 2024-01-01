@@ -20,7 +20,7 @@ const MainTextInput: React.FC<MainTextInputProps> = ({ placeholder, textColor, t
   useEffect(() => {
     const inputTextColor = textColor || mainTextInputStyles.input.color;
     const inputTextSize = textSize || mainTextInputStyles.input.fontSize;
-
+    
     setDynamicStyles({
       color: inputTextColor,
       fontSize: inputTextSize,
