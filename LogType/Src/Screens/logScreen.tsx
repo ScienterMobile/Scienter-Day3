@@ -16,6 +16,7 @@ const LogScreen: React.FC = () => {
   const [email, setEmail] = useStateImport<string>('');
   const [password, setPassword] = useStateImport<string>('');
   const [isErrorModalVisible, setIsErrorModalVisible] = useState<boolean>(false);
+  const [isHomePage, setisHomePage] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleLogin = () => {
@@ -53,7 +54,10 @@ const LogScreen: React.FC = () => {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
       <ImageBackground source={backgroundImage} style={logScreenStyles.backgroundImage}>
-      <NavBar/>
+     
+
+      <NavBar isHomePage={true} />
+
         <View style={logScreenStyles.container  as any}>
 
          
@@ -87,7 +91,7 @@ const LogScreen: React.FC = () => {
           textColor='black'
           hint="Please enter a valid Password"
         />
-          
+
           <View style={logScreenStyles.bcontainer as any} >
           <TouchableOpacity style={logScreenStyles.buttonL as any} onPress={handleLogin}>
             <Text style={logScreenStyles.buttonText as any }>Log in</Text>

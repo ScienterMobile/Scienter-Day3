@@ -16,6 +16,7 @@ import {LOG_IN} from '../Navigator/constonts'
 
 import { signupScreenStyles } from '../Styles/signupScreenStyles';
 import  MainTextInput  from '../Components/mainTextInput'; 
+import NavBar from '../Components/navBar';
 
 
 
@@ -52,6 +53,7 @@ const SignupScreen: React.FC = () => {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
       <ImageBackground source={backgroundImage} style={signupScreenStyles.backgroundImage}>
+        <NavBar/>
         <View style={signupScreenStyles.container as any} >
         
         
