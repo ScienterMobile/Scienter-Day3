@@ -8,6 +8,7 @@ const NavBar: React.FC = () => {
     <View style={[navBarStyle.bar]}>
       <View style={[navBarStyle.Item]}>
         <FontAwesome
+        
           name="home"
           size={24}
           color="black"
