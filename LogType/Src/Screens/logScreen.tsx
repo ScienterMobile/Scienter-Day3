@@ -4,8 +4,9 @@ import {  View, Text, TouchableOpacity, ImageBackground, ScrollView, KeyboardAvo
 
 import { logScreenStyles } from '../Styles/logScreenStyles';
 
-import  MainTextInput  from '../Components/mainTextInput'; 
+import MainTextInput  from '../Components/mainTextInput'; 
 import ErrorModal from '../Components/errorModal';
+import NavBar from '../Components/navBar';
 
 const LogScreen: React.FC = () => {
 
@@ -52,7 +53,12 @@ const LogScreen: React.FC = () => {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
       <ImageBackground source={backgroundImage} style={logScreenStyles.backgroundImage}>
+        
         <View style={logScreenStyles.container  as any}>
+
+         <NavBar/>
+        
+
 
         <MainTextInput
           placeholder="Username"
@@ -61,6 +67,8 @@ const LogScreen: React.FC = () => {
           hint="Please enter a username"
           
         />
+
+
 
         <MainTextInput
           hint="Please enter a valid email address"

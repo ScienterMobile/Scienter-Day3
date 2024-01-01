@@ -36,7 +36,7 @@ function Navigator() {
               style={{ flex: 1, width: '300%', height: '100%', resizeMode: 'cover' }}
             />
           ),
-        }}*/
+        }} comment that default navigation bar and I include custmize navibar*/
 
 
       > 
