@@ -4,9 +4,9 @@ export const navBarStyle = StyleSheet.create({
   bar: {
     marginTop: 0,
     padding: 19,
-    backgroundColor: 'white',
-    borderRadius: 10,
-    borderBottomColor: 'lightblue',
+    backgroundColor: 'rgba(30,120,155,0.9)',
+    borderRadius: 3,
+    borderBottomColor: 'rgba(40,61,125,0.7)',
     borderBottomWidth: 6,
     alignItems: 'center',
   },
@@ -23,15 +23,17 @@ export const navBarStyle = StyleSheet.create({
     fontFamily: 'Popins',
     fontSize: 25,
     fontWeight: 'bold',
-    color: 'dark-blue',
+    color: 'white',
   },
   icon: {
     marginRight: 20, 
+    color: 'white',
   },
   homeIcon: {
-    color: 'blue',
+    color: 'white',
   },
   gearIcon: {
     marginLeft: 'auto', 
+    color: 'white',
   },
 });

@@ -56,7 +56,7 @@ const LogScreen: React.FC = () => {
       <ImageBackground source={backgroundImage} style={logScreenStyles.backgroundImage}>
      
 
-      <NavBar isHomePage={true} />
+      <NavBar isHomePage={true} isPage={''} />
 
         <View style={logScreenStyles.container  as any}>
 
