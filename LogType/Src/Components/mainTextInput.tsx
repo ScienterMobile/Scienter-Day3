@@ -14,7 +14,8 @@ const MainTextInput: React.FC<MainTextInputProps> = ({ placeholder, textColor, t
  
   const [isFocused, setIsFocused] = useState(false);
   const [dynamicStyles, setDynamicStyles] = useState 
-   <TextStyle>({})
+  
+  <TextStyle>({})
 
 
   useEffect(() => {
