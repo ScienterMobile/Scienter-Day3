@@ -20,7 +20,7 @@ export const navBarStyle = StyleSheet.create({
   },
   title: {
     flex: 1, 
-    fontFamily: 'Popins',
+    fontFamily: 'poppins-regular',
     fontSize: 25,
     fontWeight: 'bold',
     color: 'white',
